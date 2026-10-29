@@ -23,6 +23,7 @@ jobs:
           test -f style.css
           test -f Dockerfile
           echo "All required files are present."
+          exit 1
 
       - name: Build Docker image
         run: docker build -t devops-a2:latest .
